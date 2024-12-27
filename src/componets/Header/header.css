@@ -12,6 +12,8 @@
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
+  background-color: black
+  ;
   /* background-color: red; */
 }
 .nav_black{
