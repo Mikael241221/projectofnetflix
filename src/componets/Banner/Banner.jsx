@@ -32,7 +32,7 @@ function truncate(str, n) {
       }}
 >
   <div className="banner-content">
-    <h1 className="banner-title">
+    <h1 className="banner-titles">
       {movie?.title || movie?.name || movie?.original_name}
     </h1>
     <div className="banner-buttons">
