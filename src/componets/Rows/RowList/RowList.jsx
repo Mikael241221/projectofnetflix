@@ -1,8 +1,21 @@
 import React from 'react'
+import Row from '../Row/Row'
+import requests from '../../../utils/requests'
+
 
 const RowList = () => {
   return (
-    <div>RowList</div>
+    <>
+      <Row 
+      title= "NETFLIX ORIGINALS"
+      fetchUrl={requests.fetchNetflixOriginals}
+      isLargeRow ={false}
+      />
+      {/* <Row/>
+      <Row/>
+      <Row/>
+      <Row/> */}
+    </>
   )
 }
 
