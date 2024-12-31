@@ -53,11 +53,12 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
           <img 
           onClick={() => handleclick(movie)}
           key={index}
-          src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name} className={`row_poster ${isLargeRow && "row_posterLarge"}`}/>
+          src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} 
+          alt={movie.name} className={`row_poster ${isLargeRow && "row_posterLarge"}`}/>
         ))}
       </div>
       <div style={ {padding: '40px'}} >
-        trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />
+       { trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
 
       </div>
     </div>
